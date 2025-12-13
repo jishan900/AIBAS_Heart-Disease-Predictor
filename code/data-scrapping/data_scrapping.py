@@ -27,7 +27,6 @@ main_csv = OUT_DIR / wanted
 joint_path = OUT_DIR / "joint_data_collection.csv"
 shutil.copyfile(main_csv, joint_path)
 
-
 main_csv.unlink()
 
 print("Task Complete. CSV remains:")

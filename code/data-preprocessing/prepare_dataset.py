@@ -11,7 +11,6 @@ if not JOINT_PATH.exists():
 # Load dataset
 df = pd.read_csv(JOINT_PATH, sep=";")
 
-
 print("Missing values per column (before cleaning):")
 print(df.isna().sum())
 print("Total missing values:", df.isna().sum().sum())
@@ -59,7 +58,6 @@ test_df = df_shuffled.iloc[split_idx:].copy()
 
 train_df.to_csv(DATA_DIR / "training_data.csv", index=False)
 test_df.to_csv(DATA_DIR / "test_data.csv", index=False)
-
 
 activation_df = test_df.sample(n=1, random_state=SEED)
 activation_df.to_csv(DATA_DIR / "activation_data.csv", index=False)
