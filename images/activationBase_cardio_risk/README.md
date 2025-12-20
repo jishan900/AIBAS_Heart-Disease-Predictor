@@ -89,7 +89,7 @@ Muhammad Farhan Tanvir, Md Asifuzzaman Jishan
 Created as part of the course “M. Grum: Advanced AI-based Application Systems” by the ‘Junior Chair for Business InformaGon Science, esp. AI-based ApplicaGon Systems’ at University of Potsdam
 
 ## Data origin
-Scraped/downloaded programmatically from Kaggle: “Cardiovascular Disease Dataset” by sulianova. activation_data.csv is a single sample row taken from test_data.csv.
+Scraped/downloaded programmatically from Kaggle: “Cardiovascular Disease Dataset” by sulianova. Dataset: [Cardiovascular Disease dataset](https://www.kaggle.com/datasets/sulianova/cardiovascular-disease-dataset))
 
 ## Content / Paths inside the image
 - /tmp/activationBase/activation_data.csv
