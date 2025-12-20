@@ -75,7 +75,7 @@ checkpoint = keras.callbacks.ModelCheckpoint(
 )
 early_stop = keras.callbacks.EarlyStopping(
     monitor="val_loss",
-    patience=20,
+    patience=50,
     restore_best_weights=True,
 )
 
@@ -83,8 +83,8 @@ early_stop = keras.callbacks.EarlyStopping(
 history = model.fit(
     X_train, y_train,
     validation_data=(X_test, y_test),
-    epochs=20,
-    batch_size=32,
+    epochs=50,
+    batch_size=16,
     callbacks=[csv_logger, checkpoint, early_stop],
     verbose=1,
 )
