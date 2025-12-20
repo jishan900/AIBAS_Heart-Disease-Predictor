@@ -81,6 +81,13 @@ docker pull jishan900/learningbase_cardio_risk:latest
 docker pull jishan900/activationbase_cardio_risk:latest 
 ```
 
+**Docker compose test**
+```bash
+docker volume create ai_system
+docker compose -f images/learningBase_cardio_risk/Docker-compose.yml up --remove-orphans
+docker compose -f images/learningBase_cardio_risk/Docker-compose.yml down 
+```
+
 ## Ownership
 Muhammad Farhan Tanvir, Md Asifuzzaman Jishan
 

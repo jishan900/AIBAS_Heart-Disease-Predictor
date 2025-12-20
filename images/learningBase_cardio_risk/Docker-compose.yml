@@ -1,0 +1,10 @@
+services:
+  learningbase:
+    image: jishan900/learningbase_cardio_risk:latest
+    volumes:
+      - ai_system:/tmp
+    command: sh -c "ls -R /tmp/learningBase && head -n 2 /tmp/learningBase/train/training_data.csv"
+
+volumes:
+  ai_system:
+    external: true
