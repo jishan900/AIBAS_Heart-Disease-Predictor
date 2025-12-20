@@ -1,4 +1,4 @@
-# learningBase_cardio_risk
+# LearningBase_cardio_risk
 ## Subgoal 3 - Docker Data Provision (LearningBase & ActivationBase)
 
 **Docker Installation & Verification**

@@ -1,19 +1,13 @@
 # Welcome to the Project Heart Disease Predictor
 
-The AI-CPS is an end-to-end open source platform for cyber-physical systems considering a knowledge base with the aid of artificial neuronal networks (ANN). 
-It has a comprehensive, flexible ecosystem of tools, libraries, and community resources that lets researchers push the state-of-the-art in ANN and developers easily build and deploy ANN-powered applications. 
-Its particular focus lays on the efficient application of knowledge of ANN.
-For this, it enables the flexible, node-independent (a) situational `ANN application`, (b) `ANN training and validation` as well as (c) `ANN refinement`,
-which is realized as Over-The-Air deployment of 
-(1) ANN models considered as `knowledge base`,
-(2) ANN activations considered as `activation base`,
-(3) ANN training material considered as `learning base` and
-(4) ANN routines considered as `codeBase`.
-Among furthers, this is realized on behalf of `tensor_flow` libraries, `docker` mechanisms, `python` applications,
-so that they can be realized on any kind of device (tested with `raspberry`, `mac`, `ubuntu`),
-any kind of platform (tested with `aarch64`, `x86_64` and `x86_64_gpu`).
+The goal of this project is to build an AI-based system for **heart disease risk analysis** using real-world cardiovascular data. The system supports:
+- **Regression (OLS)** using a continuous cardiovascular risk score
+- **Classification (ANN)** using a binary heart disease indicator
 
-The tool was originally developed by Dr.-Ing. Marcus Grum.
+## Data Acquisition and Pre-processing
+
+## Dataset Overview
+
 
 ## Getting Started
 
