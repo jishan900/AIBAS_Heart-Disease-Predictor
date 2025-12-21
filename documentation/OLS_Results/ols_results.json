@@ -1,0 +1,42 @@
+{
+  "model_summary": "                            OLS Regression Results                            \n==============================================================================\nDep. Variable:                      y   R-squared:                       1.000\nModel:                            OLS   Adj. R-squared:                  1.000\nMethod:                 Least Squares   F-statistic:                 3.845e+07\nDate:                Sun, 21 Dec 2025   Prob (F-statistic):               0.00\nTime:                        15:51:17   Log-Likelihood:             2.5955e+05\nNo. Observations:               50001   AIC:                        -5.191e+05\nDf Residuals:                   49989   BIC:                        -5.190e+05\nDf Model:                          11                                         \nCovariance Type:            nonrobust                                         \n==============================================================================\n                 coef    std err          t      P>|t|      [0.025      0.975]\n------------------------------------------------------------------------------\nconst          0.0005    3.1e-05     15.642      0.000       0.000       0.001\nx1             0.2498   2.39e-05   1.04e+04      0.000       0.250       0.250\nx2          4.906e-05   1.54e-05      3.175      0.001    1.88e-05    7.93e-05\nx3            -0.0005   4.23e-05    -12.462      0.000      -0.001      -0.000\nx4          6.279e-05   3.61e-05      1.738      0.082   -8.03e-06       0.000\nx5             0.2496   4.86e-05   5133.275      0.000       0.250       0.250\nx6          8.295e-05   4.46e-05      1.861      0.063   -4.43e-06       0.000\nx7             0.1500   2.05e-05   7308.394      0.000       0.150       0.150\nx8             0.1000   2.38e-05   4198.421      0.000       0.100       0.100\nx9             0.0500   2.39e-05   2091.267      0.000       0.050       0.050\nx10            0.0500   2.88e-05   1732.076      0.000       0.050       0.050\nx11           -0.0500   1.52e-05  -3285.911      0.000      -0.050      -0.050\n==============================================================================\nOmnibus:                   139089.349   Durbin-Watson:                   1.959\nProb(Omnibus):                  0.000   Jarque-Bera (JB):       5530086196.847\nSkew:                          36.075   Prob(JB):                         0.00\nKurtosis:                    1630.631   Cond. No.                         17.7\n==============================================================================\n\nNotes:\n[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.",
+  "features_used": [
+    "age",
+    "gender",
+    "height",
+    "weight",
+    "ap_hi",
+    "ap_lo",
+    "cholesterol",
+    "gluc",
+    "smoke",
+    "alco",
+    "active"
+  ],
+  "dropped_columns": [
+    "id",
+    "bmi",
+    "cardio"
+  ],
+  "training_metrics": {
+    "mse": 1.8148166889053899e-06,
+    "rmse": 0.0013471513236846817,
+    "mae": 0.00015357943287771508,
+    "r2": 0.9998818199314757,
+    "adj_r2": 0.9998817939261395
+  },
+  "test_metrics": {
+    "mse": 2.989282925174829e-06,
+    "rmse": 0.001728954286606453,
+    "mae": 0.00016431283055176715,
+    "r2": 0.9998020844715167
+  },
+  "diagnostic_tests": {
+    "durbin_watson": 1.9586735099504935,
+    "breusch_pagan_stat": 168.01039677625846,
+    "breusch_pagan_pvalue": 3.0278636290074955e-30,
+    "white_test_stat": 974.9771609842473,
+    "white_test_pvalue": 8.933533310324182e-158
+  },
+  "model_file": "documentation\\OLS_Results\\currentOlsSolution.pkl"
+}
