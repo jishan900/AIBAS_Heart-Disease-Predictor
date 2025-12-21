@@ -1,0 +1,54 @@
+
+MODEL COMPARISON REPORT
+======================
+
+TASK COMPARISON:
+- OLS Model: Predicts continuous cardiovascular risk score (0-1 scale)
+- ANN Model: Predicts binary heart disease presence (0/1 classification)
+
+PERFORMANCE SUMMARY:
+===================
+
+OLS Regression Results:
+- Target: Continuous risk_score
+- Test R²: 0.9998
+- Test RMSE: 0.0017
+- Training R²: 0.9999
+- Adjusted R²: 0.9999
+
+ANN Classification Results:
+- Target: Binary cardio disease
+- Test Accuracy: 0.7112 (71.1%)
+- Training Accuracy: 0.6494
+- Validation Accuracy: 0.6911
+
+FEATURE USAGE:
+=============
+Both models use 11 features:
+age, gender, height, weight, ap_hi, ap_lo, cholesterol, gluc, smoke, alco, active
+
+MODEL CHARACTERISTICS:
+=====================
+
+OLS Strengths:
++ Highly interpretable coefficients
++ Fast training and prediction
++ Statistical significance testing
++ Perfect fit to risk score (R² ≈ 1.0)
+
+
+
+ANN Strengths:
++ Handles non-linear relationships
++ Good generalization (71% accuracy)
++ Robust to feature interactions
++ More realistic performance metrics
+
+
+
+DIAGNOSTIC INSIGHTS:
+===================
+- OLS Durbin-Watson: 1.9587 (close to 2.0 = good)
+- Both models use same preprocessed features
+- Different targets make direct comparison challenging
+- Consider ensemble approach combining both predictions
