@@ -1,0 +1,36 @@
+{
+  "model_comparison": {
+    "OLS_Regression": {
+      "task": "Continuous risk score prediction (0-1)",
+      "target_variable": "risk_score",
+      "model_type": "Linear Regression",
+      "test_r2": 0.9998020844715167,
+      "test_rmse": 0.001728954286606453,
+      "training_r2": 0.9998818199314757,
+      "adj_r2": 0.9998817939261395,
+      "features_count": 11,
+      "interpretability": "High - coefficients show direct feature impact"
+    },
+    "ANN_Classification": {
+      "task": "Binary heart disease classification (0/1)",
+      "target_variable": "cardio",
+      "model_type": "Artificial Neural Network",
+      "test_accuracy": 0.7112231021518278,
+      "training_accuracy": 0.6494070291519165,
+      "validation_accuracy": 0.6911447048187256,
+      "features_count": 11,
+      "interpretability": "Low - black box model"
+    }
+  },
+  "key_differences": {
+    "target_variables": "OLS predicts continuous risk (0-1), ANN predicts binary disease (0/1)",
+    "performance_metrics": "OLS uses R\u00b2/RMSE, ANN uses accuracy/precision/recall",
+    "model_complexity": "OLS is linear and interpretable, ANN is non-linear and complex",
+    "overfitting_risk": "OLS shows potential overfitting (R\u00b2=0.9999), ANN more reasonable (71% accuracy)"
+  },
+  "recommendations": {
+    "use_ols_when": "Need interpretable model, continuous risk assessment, feature importance analysis",
+    "use_ann_when": "Need binary classification, can accept black box, have large datasets",
+    "concerns": "OLS R\u00b2 of 0.9999 suggests overfitting or data leakage - investigate risk_score calculation"
+  }
+}
