@@ -2,8 +2,8 @@ services:
   learningbase:
     image: jishan900/learningbase_cardio_risk:latest
     volumes:
-      - ai_system:/tmp
-    command: sh -c "ls -R /tmp/learningBase && head -n 2 /tmp/learningBase/train/training_data.csv"
+      - ai_system:/mnt
+    command: sh -c "echo '=== LEARNING BASE TEST ===' && cp -r /tmp/learningBase /mnt/ && ls -R /mnt/learningBase && echo '=== Dataset Info ===' && echo 'Training data:' && head -n 2 /mnt/learningBase/train/training_data.csv && echo 'Test data:' && head -n 2 /mnt/learningBase/validation/test_data.csv && echo 'Learning Base functioning correctly!'"
 
 volumes:
   ai_system:
