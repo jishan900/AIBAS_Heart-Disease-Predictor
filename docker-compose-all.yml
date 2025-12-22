@@ -1,0 +1,36 @@
+services:
+  knowledgebase:
+    image: knowledgebase_cardio_risk:latest
+    container_name: knowledgebase_cardio_risk
+    volumes:
+      - ai_system:/mnt
+    command: sh -c "echo '=== KNOWLEDGE BASE CONTAINER ===' && ls -lh /tmp/knowledgeBase && echo 'Models loaded successfully!' && sleep 300"
+    restart: "no"
+
+  codebase:
+    image: codebase_cardio_risk:latest
+    container_name: codebase_cardio_risk
+    volumes:
+      - ai_system:/mnt
+    command: sh -c "echo '=== CODE BASE CONTAINER ===' && ls -lh /tmp/codeBase && echo 'Training scripts ready!' && sleep 300"
+    restart: "no"
+
+  learningbase:
+    image: learningbase_cardio_risk:latest
+    container_name: learningbase_cardio_risk
+    volumes:
+      - ai_system:/mnt
+    command: sh -c "echo '=== LEARNING BASE CONTAINER ===' && ls -R /tmp/learningBase && echo 'Datasets loaded!' && sleep 300"
+    restart: "no"
+
+  activationbase:
+    image: activationbase_cardio_risk:latest
+    container_name: activationbase_cardio_risk
+    volumes:
+      - ai_system:/mnt
+    command: sh -c "echo '=== ACTIVATION BASE CONTAINER ===' && ls -R /tmp/activationBase && echo 'Activation data ready!' && sleep 300"
+    restart: "no"
+
+volumes:
+  ai_system:
+    external: true
