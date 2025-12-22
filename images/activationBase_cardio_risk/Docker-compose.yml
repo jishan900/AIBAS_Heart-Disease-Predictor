@@ -3,7 +3,7 @@ services:
     image: jishan900/activationbase_cardio_risk:latest
     volumes:
       - ai_system:/mnt
-    command: sh -c "ls -R /tmp/activationBase && head -n 2 /tmp/activationBase/activation_data.csv"
+    command: sh -c "echo '=== ACTIVATION BASE TEST ===' && cp -r /tmp/activationBase /mnt/ && ls -R /mnt/activationBase && echo '=== Activation Data Sample ===' && head -n 2 /mnt/activationBase/activation_data.csv && echo 'Activation Base functioning correctly!'"
 
 volumes:
   ai_system:
