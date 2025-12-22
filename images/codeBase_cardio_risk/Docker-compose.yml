@@ -1,0 +1,10 @@
+services:
+  codebase:
+    image: jishan900/codebase_cardio_risk:latest
+    volumes:
+      - ai_system:/mnt
+    command: sh -c "echo '=== CODE BASE TEST ===' && cp -r /tmp/codeBase /mnt/ && ls -lh /mnt/codeBase && echo '=== Code Files Available ===' && wc -l /mnt/codeBase/*.py && echo 'Code Base functioning correctly!'"
+
+volumes:
+  ai_system:
+    external: true
