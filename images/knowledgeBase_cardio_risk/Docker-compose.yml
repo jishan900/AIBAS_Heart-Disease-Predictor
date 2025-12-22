@@ -1,0 +1,10 @@
+services:
+  knowledgebase:
+    image: jishan900/knowledgebase_cardio_risk:latest
+    volumes:
+      - ai_system:/mnt
+    command: sh -c "echo '=== KNOWLEDGE BASE TEST ===' && cp -r /tmp/knowledgeBase /mnt/ && ls -lh /mnt/knowledgeBase && echo '=== Models Available ===' && echo 'ANN Model:' && ls -lh /mnt/knowledgeBase/currentAiSolution.keras && echo 'OLS Model:' && ls -lh /mnt/knowledgeBase/currentOlsSolution.pkl && echo 'Knowledge Base functioning correctly!'"
+
+volumes:
+  ai_system:
+    external: true
