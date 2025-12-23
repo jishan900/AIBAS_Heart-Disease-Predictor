@@ -330,7 +330,7 @@ Created as part of **"M. Grum: Advanced AI-based Application Systems"**
 4. Update Docker images when modifying core components
 5. Maintain AGPL-3.0 license compliance
 
-## 📄 License
+## License
 
 This project is licensed under the **GNU Affero General Public License v3.0 (AGPL-3.0)**.
 
@@ -362,7 +362,7 @@ For full license text, see: https://www.gnu.org/licenses/agpl-3.0.en.html
 
 ### Data Source
 - **Dataset**: [Cardiovascular Disease Dataset](https://www.kaggle.com/datasets/sulianova/cardiovascular-disease-dataset)
-- **Author**: sulianova
+- **Author**: Svetlana Ulianova
 - **Platform**: Kaggle
 - **License**: Database Contents License (DbCL) v1.0
 
