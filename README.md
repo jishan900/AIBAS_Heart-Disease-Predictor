@@ -2,13 +2,13 @@
 
 An AI-based system for **cardiovascular disease risk analysis** using real-world data from Kaggle. This project implements a complete machine learning pipeline with containerized deployment for AI-CPS (Cyber-Physical Systems) integration.
 
-## 🎯 Project Overview
+## Project Overview
 
 The system provides dual prediction approaches:
-- **🧠 Artificial Neural Network (ANN)**: Binary heart disease classification (0/1)
-- **📊 Ordinary Least Squares (OLS)**: Continuous cardiovascular risk score (0-1 scale)
+- **Artificial Neural Network (ANN)**: Binary heart disease classification (0/1)
+- **Ordinary Least Squares (OLS)**: Continuous cardiovascular risk score (0-1 scale)
 
-## 🏆 Key Achievements
+## Key Achievements
 
 - **71.12% ANN accuracy** for binary disease classification
 - **R² = 0.9998** for OLS continuous risk prediction  
@@ -16,7 +16,7 @@ The system provides dual prediction approaches:
 - **Complete AI-CPS integration** with external volume mounting
 - **Comprehensive model comparison** and performance analysis
 
-## 📊 Dataset Overview
+## Dataset Overview
 
 **Source**: [Cardiovascular Disease Dataset](https://www.kaggle.com/datasets/sulianova/cardiovascular-disease-dataset) by sulianova (Kaggle)
 
@@ -32,7 +32,7 @@ The system provides dual prediction approaches:
 
 **Dataset Size**: 70,000 patient records → 62,501 after preprocessing (80/20 train/test split)
 
-## 🚀 Quick Start
+## Quick Start
 
 ### Prerequisites
 - Docker and Docker Compose
@@ -67,7 +67,7 @@ docker compose -f docker-compose-ann-application.yml up --remove-orphans
 docker compose -f docker-compose-ols-application.yml up --remove-orphans
 ```
 
-## 🏗️ Project Structure
+## Project Structure
 
 ```
 AIBAS_Heart-Disease-Predictor/
@@ -102,9 +102,9 @@ AIBAS_Heart-Disease-Predictor/
 ```
 
 
-## 🤖 Machine Learning Models
+## Machine Learning Models
 
-### 🧠 Artificial Neural Network (ANN)
+### Artificial Neural Network (ANN)
 - **Architecture**: Sequential (64 → 32 → 1 neurons)
 - **Activation**: ReLU → ReLU → Sigmoid
 - **Task**: Binary heart disease classification
@@ -117,7 +117,7 @@ AIBAS_Heart-Disease-Predictor/
 - Recall: 0.59 (class 1), 0.83 (class 0)
 - F1-Score: 0.67 (class 1), 0.74 (class 0)
 
-### 📊 Ordinary Least Squares (OLS)
+### Ordinary Least Squares (OLS)
 - **Type**: Linear regression with statistical analysis
 - **Task**: Continuous cardiovascular risk prediction
 - **Performance**: R² = 0.9998, RMSE = 0.0017
@@ -130,7 +130,7 @@ AIBAS_Heart-Disease-Predictor/
 - Diagnostic plots (residuals, Q-Q, leverage)
 - Feature importance analysis
 
-### 🔄 Model Comparison
+### Model Comparison
 | Aspect | ANN | OLS |
 |--------|-----|-----|
 | **Task** | Binary Classification | Continuous Regression |
@@ -139,7 +139,7 @@ AIBAS_Heart-Disease-Predictor/
 | **Interpretability** | Low (black box) | High (linear coefficients) |
 | **Use Case** | Diagnostic decisions | Risk assessment |
 
-## 🐳 Docker Deployment
+## Docker Deployment
 
 ### Available Images
 All images are publicly available on Docker Hub:
@@ -179,7 +179,7 @@ docker compose -f docker-compose-ols-application.yml up --remove-orphans
 - **Mount Point**: `/mnt` (avoids container `/tmp` conflicts)
 - **Workflow**: Sequential loading → Model application → Results
 
-## 📈 Results & Performance
+## Results & Performance
 
 ### ANN Model Results
 - **Test Accuracy**: 71.12%
@@ -201,7 +201,7 @@ docker compose -f docker-compose-ols-application.yml up --remove-orphans
 - Residual analysis plots
 - Feature importance charts
 
-## 🔬 Data Processing Pipeline
+## Data Processing Pipeline
 
 ### 1. Data Acquisition
 ```bash
@@ -234,7 +234,7 @@ python code/OLS/train_ols.py
 python code/OLS/model_comparison.py
 ```
 
-## 🎯 Use Cases & Applications
+## Use Cases & Applications
 
 ### Clinical Decision Support
 - **ANN**: Binary diagnostic screening (Disease/No Disease)
@@ -250,7 +250,7 @@ python code/OLS/model_comparison.py
 - **Feature Analysis**: Understanding cardiovascular risk factors
 - **Performance Benchmarking**: Baseline for future improvements
 
-## 🛠️ Development Setup
+## Development Setup
 
 ### Local Development
 1. **Install Dependencies**:
@@ -293,7 +293,7 @@ python code/OLS/model_comparison.py
    docker compose -f images/knowledgeBase_cardio_risk/Docker-compose.yml up
    ```
 
-## 📋 Requirements
+## Requirements
 
 ### System Requirements
 - **OS**: Windows, macOS, Linux
@@ -312,7 +312,7 @@ seaborn>=0.11.0
 numpy>=1.21.0
 ```
 
-## 🤝 Contributing
+## Contributing
 
 ### Project Team
 - **Muhammad Farhan Tanvir**
@@ -335,14 +335,14 @@ Created as part of **"M. Grum: Advanced AI-based Application Systems"**
 This project is licensed under the **GNU Affero General Public License v3.0 (AGPL-3.0)**.
 
 **Key Points**:
-- ✅ Free to use, modify, and distribute
-- ✅ Must share source code of modifications
-- ✅ Network use triggers copyleft requirements
-- ✅ Commercial use permitted with compliance
+- Free to use, modify, and distribute
+- Must share source code of modifications
+- Network use triggers copyleft requirements
+- Commercial use permitted with compliance
 
 For full license text, see: https://www.gnu.org/licenses/agpl-3.0.en.html
 
-## 📚 Documentation
+## Documentation
 
 ### Generated Reports
 - `documentation/ANN_Results/final_metrics.txt` - Neural network performance
@@ -358,7 +358,7 @@ For full license text, see: https://www.gnu.org/licenses/agpl-3.0.en.html
 - Feature importance and coefficient analysis
 - Model comparison charts
 
-## 🔗 References
+## References
 
 ### Data Source
 - **Dataset**: [Cardiovascular Disease Dataset](https://www.kaggle.com/datasets/sulianova/cardiovascular-disease-dataset)
@@ -379,7 +379,7 @@ This project demonstrates practical implementation of AI-CPS concepts including:
 
 ---
 
-## 🚀 Quick Commands Reference
+## Quick Commands Reference
 
 ```bash
 # Complete Docker deployment
