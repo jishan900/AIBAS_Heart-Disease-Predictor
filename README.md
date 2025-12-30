@@ -18,7 +18,7 @@ The system provides dual prediction approaches:
 
 ## Dataset Overview
 
-**Source**: [Cardiovascular Disease Dataset](https://www.kaggle.com/datasets/sulianova/cardiovascular-disease-dataset) by sulianova (Kaggle)
+**Source**: [Cardiovascular Disease Dataset](https://www.kaggle.com/datasets/sulianova/cardiovascular-disease-dataset) by Svetlana Ulianova (Kaggle)
 
 **Features**: 11 cardiovascular indicators
 - Demographics: age, gender, height, weight
